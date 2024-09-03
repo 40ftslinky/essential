@@ -1,0 +1,344 @@
+/* buttons.css */
+
+
+.cta-wrapper {
+    margin-top: var(--gap-large);
+}
+
+/* style */
+
+button,
+.button,
+:not([class*="flickity"])[class*="button"],
+a[class*="button"],
+input[type=submit],
+.button-primary,
+.nav-button {
+    border-width: 1px;
+    font-size: 1rem;
+    font-weight: var(--med-font-weight);
+    line-height: 1;
+    padding: 0.75rem 2rem ;
+    border-radius: 0;
+    position: relative;
+    transition: var(--transition-button);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    word-break: keep-all;    
+    min-width: fit-content;
+    text-transform: uppercase;
+    letter-spacing: var(--letterspacing-button);
+}
+
+:not([class*="flickity"])[class*="button"][class*="-icon"],
+:not(svg)[class*="-icon"], .button.icon {
+    padding-right: 3rem;
+    &:after {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translate(0%, -50%);
+        display: inline;
+        content: url(../images/icons/arrow.svg);
+        margin-right: 1rem;
+        transition: var(--transition-button);
+        /*  */
+        & path {
+            fill: var(--color-primary);
+        }
+    }
+    &:hover {
+        background-color: var(--color-secondary);
+        border: 1px solid var(--color-secondary);
+        color: var(--color-white);
+        &:after {
+            /*  */
+            content: url(../images/icons/arrow-wht.svg);
+            transform: rotate(90deg) translate(-100%, 0%) ;
+        }
+    }
+}
+
+a.nav-button {
+    padding-right: 3rem !important;
+    padding-left: 1rem !important;
+    &:after {
+        position: absolute;
+        top: 50%;
+        right: 0.5rem;
+        transform: translate(0%, -50%);
+        display: inline;
+        content: url(../images/icons/arrow.svg);
+        margin-right: 0.5rem;
+        transition: var(--transition-button);
+        /*  */
+        & path {
+            fill: var(--color-primary);
+        }
+    }
+    &:hover {
+        background-color: var(--color-secondary);
+        border: 1px solid var(--color-secondary);
+        color: var(--color-white);
+        &:after {
+            /*  */
+            content: url(../images/icons/arrow-wht.svg);
+            transform: translate(-0.5rem, -50%);
+        }
+    }
+}
+
+
+
+/* .has-submenu, */
+.has-dropdown {
+    padding-right: 2rem;
+    &:after {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translate(0%, -50%);
+        transform-origin: center center;
+        display: inline;
+        content: url(../images/icons/arrow-down-blk.svg);
+        margin-right: 1rem;
+        transition: var(--transition-button); 
+        opacity: 1;       
+    }
+    &:hover {
+        &:after {
+            opacity: 0.3;
+            transform: rotate(180deg) translate(0%, 50%) ;
+        }
+    }
+}
+
+/* variation */
+
+.button-secondary,
+/* .button-carousel, */
+:not(svg)[class*="-icon"],
+.nav-button {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-secondary);
+    color: var(--color-secondary);
+    &:hover {
+        background-color: var(--color-secondary);
+        border: 1px solid var(--color-secondary);
+        color: var(--color-white);
+    }
+}
+
+.nav-button.is-selected {
+    background-color: var(--color-secondary);
+    border: 1px solid var(--color-secondary);
+    color: var(--color-white);
+    padding-right: 3rem;
+    &:after {
+        position: absolute;
+        top: 50%;
+        right: 0.5rem;
+        transform: translate(0%, -50%);
+        display: inline;
+        content: url(../images/icons/arrow-wht.svg);
+        margin-right: 0.5rem;
+        transition: var(--transition-button);
+    }
+    &:hover {
+        background-color: var(--color-white);
+        border: 1px solid var(--color-secondary);
+        color: var(--color-secondary);
+        &:after {
+            /*  */
+            content: url(../images/icons/arrow.svg);
+            transform: translate(-0.5rem, -50%);
+        }
+    }
+}
+
+.grid-button {
+    background-color: var(--color-secondary);
+    border: 1px solid var(--color-white);
+    color: var(--color-white);
+    padding-right: 3rem !important;
+    &:after {
+        position: absolute;
+        top: 50%;
+        /* right: 10px; */
+        right: 0.5rem;
+        transform: translate(0%, -55%);
+        transform-origin: center center;
+        display: inline;
+        content: url(../images/icons/arrow-down-wht.svg);
+        margin-right: 1rem;
+        transition: var(--transition); 
+        opacity: 1;       
+    }
+    &:hover {
+        background-color: var(--color-white);
+        border: 1px solid var(--color-white);
+        color: var(--color-secondary);
+        &:after {
+            content: url(../images/icons/arrow-down.svg);
+            /* opacity: 0.3; */
+            transform: rotate(180deg) translate(0%, 45%) ;
+            transition: var(--transition);
+        }
+    }
+}
+
+/* add .selected class on click - */
+.grid-button.is-selected {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-white);
+    color: var(--color-secondary);
+    padding-right: 3rem;
+    &:after {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translate(0%, -55%);
+        transform-origin: center center;
+        display: inline;
+        content: url(../images/icons/arrow-down.svg);
+        margin-right: 1rem;
+        transition: var(--transition-button); 
+        opacity: 1;       
+    }
+    &:hover {
+        background-color: var(--color-secondary);
+        border: 1px solid var(--color-white);
+        color: var(--color-white);
+        &:after {
+            content: url(../images/icons/arrow-down-wht.svg);
+            /* opacity: 0.3; */
+            transform: rotate(180deg) translate(0%, 47.5%) ;
+        }
+    }
+}
+
+
+/* note: not sure this will work */
+
+.faq__item {
+    /* Store the parent selector in a variable */
+    $parent: &;
+    &.active {
+      #{$parent}-header {
+        /* rules here */
+      }
+    }
+  }
+
+
+.button-solid {
+    background-color: var(--color-secondary);
+    border: 1px solid var(--color-secondary);
+    color: var(--color-white);
+    &:hover {
+        background-color: var(--color-white);
+        border: 1px solid var(--color-secondary);
+        color: var(--color-secondary);
+    }
+}
+
+.button-outline {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    &:hover {
+        background-color: var(--color-primary);
+        border: 1px solid var(--color-primary);
+        color: var(--color-white);
+    }
+}
+
+.button,
+input[type=submit],
+.button-primary {
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    color: var(--color-white);
+    &:hover {
+        background-color: var(--color-white);
+        border: 1px solid var(--color-primary);
+        color: var(--color-primary);
+    }
+}
+
+/*  */
+
+.outside-link {
+    font-weight: var(--link-font-weight);
+}
+
+.outside-link::after {
+    content: url(../images/icons/external-link.svg);
+    margin-left: 0.5rem;
+    transition: var(--transition-button);
+}
+
+.svg-icon {
+    /* Place the icon on the text baseline. */
+    position: relative;
+    top: .125em;
+
+    /* Prevent the icon from shrinking inside a flex container. */
+    flex-shrink: 0;
+
+    /* Scale the icon to match the font-size of the parent element. */
+    height: 1em;
+    width: 1em;
+
+    /* Let the icon take whatever color the parent has. */
+    fill: currentColor;
+
+    /*
+     * If the icon is used on a link, which has a color transition,
+     * we can also use a transition on the fill value.
+    */
+   transition: fill .3s;
+}
+
+
+.cky-btn-reject,
+.cky-btn-accept {
+    /* min-width: 190px; */
+}
+.cky-btn-revisit::after {
+    right: -10px !important;
+}
+.cky-banner-bottom {
+    margin-bottom: 0;
+}
+
+/*  */
+a:active, a:hover {
+    outline: 0;
+}
+a.cta-blue, a.cta-gold, div.cta-gold a {
+    font-family: "Proxima Nova Bold";
+    color: #1860a3;
+    border: 1px solid;
+    padding: 15px 8%;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    min-width: 100px;
+}
+
+div.cta-gold a {
+    margin-top: 15px;
+    border: none;
+    background: linear-gradient(270deg, #1860a3, #1860a3, #FFBF00, #FFBF00);
+    background-size: 900% 300%;
+    background-position: 1% 50%;
+    transition: all 0.8s;
+}
+
+div.cta-gold a:hover {
+    cursor: pointer;
+    background-position: 99% 50%;
+    color: #FFFFFF;
+}

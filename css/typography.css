@@ -1,0 +1,294 @@
+/* typography.css */
+
+
+:root {
+    --base-font-family: 'proxima-nova', Arial, sans-serif;
+    --heading-font-family: 'proxima-nova', Arial, sans-serif;
+    --menu-font-family: 'proxima-nova', Arial, sans-serif;
+    --footer-font-family: 'proxima-nova', Arial, sans-serif;
+    --heading-serif: 'Spectral',serif;
+
+    --base-line-height: 1.55;
+    --base-font-percent: 62.5%;
+    --base-font-size: 16px, 1rem;
+    /* specific */
+    --base-font-weight: 300;
+    --button-font-weight: 500;
+    --link-font-weight: 600;
+    --heading-font-weight: 900;
+    --menu-font-weight: 400;
+    --footer-font-weight: 400;
+    /*  */
+    --thin-font-weight: 300;
+    --light-font-weight: 400;
+    --reg-font-weight: 500;
+    --semi-font-weight: 600;
+    --bold-font-weight: 700;
+    --extra-font-weight: 800;
+    --black-font-weight: 900;
+
+    /*  */
+    --font-size-base: 1rem;
+    --font-size-xs: 0.6rem;
+    --font-size-sm: 0.8rem;
+    --font-size-md: 1.25rem;
+    --font-size-lg: 1.4rem;
+    --font-size-lg: clamp(1.125rem, 1.0414rem + 0.3822vw, 1.5rem);
+    --font-size-xl: 2.2rem;
+    --font-size-xxl: 2.4rem;
+    --font-size-xxxl: clamp(1.5rem, 0.2308rem + 2.3077vw, 3rem);
+    --font-size-sxl: clamp(1.5rem, 0.2308rem + 2.3077vw, 3rem);
+    /* 3rem; */
+    --font-size-huge: 90px; /* 4.688vw */
+    --font-size-huge-sub: 50px;
+    --font-size-h2: 32px;
+    --font-size-h3: 28.5px;
+    --font-size-h4-bold: 16.5px;
+    --font-size-h4-semibold: 16.5px;
+    --font-size-h4: 16.5px;
+    --font-size-h5: 14px;
+    --font-size-h6: 12px;
+    --font-size-menu: 12px;
+    --font-size-caption: 12px;
+    --font-size-footer: 12px;
+    /* --font-size-menu: clamp(1rem, 0.9857rem + 0.6369vw, 1.25rem); */
+    /*  */
+    --font-awesome: 'FontAwesome';
+    /*  */
+    --intro-size: 28px;
+    /* --intro-size: clamp(1.125rem, 0.9857rem + 0.6369vw, 1.75rem); */
+    --large-size: 18px;
+    --normal-size: 16.5px;
+    --small-size: 14px;
+    --micro-size: 12px;
+    /* non-standard */
+    --heading-size-sm: 1.25rem;
+    --heading-size-lrg: 36px;
+    /*  */
+    /* 
+    Tracking Conversion CSS “letter-spacing”
+    1 =1/1000 em
+    100 =100/1000 em =0.10 em 
+    based on an Em Size of 1000 - not always the case
+    */
+    --letterspacing-base: 0;
+    --letterspacing-text: 0.03em;
+    --letterspacing-heading: 0;
+    --letterspacing-menu: 0.1em; /* 0.096em */
+    --letterspacing-footer: 0.1em; /* 0.096em */
+    --letterspacing-button: 0.1em;
+    --letterspacing-caption: 0.025em;
+}
+
+@media screen and (max-width: 880px){
+    :root {
+        --font-size-xxxl: 22px;
+        --intro-size: clamp(1.125rem, 0.9857rem + 0.6369vw, 1.75rem);
+        --base-font-size: 1.5rem;
+        --font-size-base: 1.5rem;
+    }
+}
+@media screen and (max-width: 1080px){
+    :root {
+        --font-size-menu: 2rem;
+    }
+}
+
+* {
+    font-family: "proxima-nova", sans-serif;
+    letter-spacing: var(--letterspacing-base);
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: var(--color-white);
+    background: var(--secondary);
+  }
+  
+::selection {
+    color: var(--color-white);
+    background: var(--secondary);
+}
+
+button, 
+[class*="button"] { 
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none;
+}
+
+html {font-size: 100%;} /* 16px */
+
+body {
+    font-family: var(--base-font-family);
+    font-weight: var(--base-font-weight);
+    line-height: var(--base-line-height);
+	font-style: normal;
+    color: var(--primary);
+}
+
+.normal { font-size: var(--font-size-base); }
+.micro { font-size: var(--font-size-xs); }
+.small, small { font-size: var(--font-size-sm); }
+.medium { font-size: var(--font-size-md); }
+.large { font-size: var(--font-size-lg) ; }
+.xlarge { font-size: var(--font-size-xl) ; }
+
+[class*="_light"] { font-weight: var(--light-font-weight);}
+[class*="_reg"] { font-weight: var( --reg-font-weight);}
+[class*="_med"] { font-weight: var(--med-font-weight);}
+[class*="_semi"] { font-weight: var(--semi-font-weight);}
+[class*="_bold"] { font-weight: var(--bold-font-weight);}
+[class*="_extra"] { font-weight: var(--extra-font-weight);}
+[class*="_black"] { font-weight: var(--black-font-weight);}
+
+.scaling_text {
+    font-size: max(1rem,min(.38835vw + .908981rem,1.375rem));
+}
+
+/* -- fonts -- */
+
+.proxima-nova-regular {
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.spectral-regular-italic {
+    font-family: "Spectral", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.spectral-regular {
+    font-family: "Spectral", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* links */
+
+.link {
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.link:hover {
+    text-decoration: none;
+}
+
+a {
+    color: var(--color-primary);
+    /* text-underline-offset: 3px;
+    text-decoration-thickness: 1px; */
+}
+
+/* headings */
+
+h1, h2, h3 {
+    font-family: var(--heading-serif);
+    font-weight: 400;
+    /* font-weight: var(--heading-font-weight); */
+    line-height: 1.2;
+    margin: 0 0 0.75rem 0;
+    /* color: var(--color-primary); */
+}
+
+h4, h5, h6 {
+    font-family: var(--heading-font-family);
+    font-weight: 600;
+    font-weight: var(--semi-font-weight); 
+    line-height: 1.2;
+    margin: 0 0 0.5rem 0;
+    /* color: var(--color-primary); */
+}
+
+.site-title h1 {
+    margin-bottom: 0;
+}
+
+/* headings size */
+
+h1.huge {
+    font-size: var(--font-size-huge);
+    line-height: 1;
+}
+h1.subheading, .subheading {
+    font-size: var(--font-size-huge-sub);
+    line-height: 1;
+    display: block;
+}
+h2 {
+    font-size: var(--font-size-h2);
+    line-height: 1.2;
+}
+h3 {
+    font-size: var(--font-size-h3);
+    line-height: 1.2;
+}
+h4.bold {
+    font-family: var(--heading-font-family);
+    font-size: var(--font-size-h4-bold);
+    line-height: 1.2;
+}
+h4.semibold {
+    font-family: var(--heading-font-family);
+    font-size: var(--font-size-h4-semibold);
+    line-height: 1.2;
+}
+
+/* styles */
+
+.bold {
+    font-weight: 700;
+    font-weight: var(--bold-font-weight);
+}
+.semibold {
+    font-weight: 600;
+    font-weight: var(--semi-font-weight);
+}
+.regular {
+    font-weight: 500;
+    font-weight: var(--reg-font-weight);
+}
+.light {
+    font-weight: 400;
+    font-weight: var(--light-font-weight);
+}
+
+/* paragraphs */
+
+p {
+    margin: 0 0 1.5rem 0;
+    max-width: 65ch;
+    font-weight: var(--base-font-weight);
+    font-size: var(--font-size-base);
+}
+
+strong {
+    font-weight: var(--semi-font-weight);
+}
+
+.intro, .intro-light {
+    font-size: var(--intro-size);
+}
+.intro {
+    margin-bottom: 2rem;
+    font-weight: var(--med-font-weight);
+}
+.intro-light {
+    /* margin-bottom: 0; */
+    font-weight: var(--light-font-weight);
+}
+.intro-light:last-of-type {
+    margin-bottom: 0;
+}
+
+/* other */
+
+figcaption, .caption {
+    font-size: var(--font-size-caption);
+    font-weight: var(--caption-font-weight);
+    color: var(--color-grey);
+    margin-bottom: 0;
+    letter-spacing: var(--letterspacing-caption);
+}
