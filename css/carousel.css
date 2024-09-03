@@ -17,6 +17,7 @@
 }
 
 
+
 /* ----------------------- */
 /* CELL */
 
@@ -77,6 +78,16 @@
     }
 }
 
+@media screen and (max-width: 1080px) {    
+    .full-width-bg,
+    .full-width-bg .carousel,
+    .full-width-bg .carousel-cell,
+    .full-width-bg .carousel-cell .hero-image,
+    .full-width-bg .carousel-cell img {
+        height: 50vh;
+    }
+}
+
 .articles .carousel-cell:not(:last-of-type) {
     margin-right: var(--gap);
 }
@@ -132,6 +143,13 @@ button.flickity-button.flickity-prev-next-button.previous {
     left: 50px;
 }
 
+.full-width-bg .flickity-prev-next-button.next {
+    right: 0px;
+}
+.full-width-bg .flickity-prev-next-button.previous {
+    left: 0px;
+}
+
 @media screen and (max-width: 880px) {
     .articles .flickity-prev-next-button.next {
         right: -10px;
@@ -157,15 +175,22 @@ button.flickity-button.flickity-prev-next-button.previous {
     background-color: var(--secondary);
 }
 
-.project-sect .flickity-page-dots .dot {
+.full-width-bg .flickity-page-dots {
+    bottom: 32px;
+}
+
+.project-sect .flickity-page-dots .dot,
+.full-width-bg .flickity-page-dots .dot {
     background-color: var(--white);
     opacity: 0.8;
     box-sizing: border-box;
 }
-.projects-sect .flickity-page-dots .dot.is-selected {
+.projects-sect .flickity-page-dots .dot.is-selected,
+.full-width-bg .flickity-page-dots .dot.is-selected {
     background-color: var(--secondary);
     opacity: 1;
     border: solid 1px rgba(var(--white-rgb), 0.8);
 }
+
 
 /* ----------------------- */

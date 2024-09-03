@@ -121,6 +121,50 @@ section.plain, .plain {
     background-color: var(--color-white);
 }
 
+/*  */
+.full-width-bg {
+    padding: 0;
+    width: var(--max-width);
+    max-width: var(--max-width);
+}
+
+.full-width-bg .cell_wrap { position: relative; }
+.cell_wrap .row { position: absolute; top:50%; left: var(--gutter); transform: translateY(-50%);}
+
+.full-width-bg .column.half_col { width: calc(50% -(var(--gutter)* 2));}
+.full-width-bg .column.half_col .card {
+    aspect-ratio: 1 / 1;
+    max-width: unset;
+    width: calc(var(--max-width) / 4);
+}
+@media screen and (max-width: 1200px) {
+    .full-width-bg .column.half_col .card {
+        width: calc(var(--max-width) / 3);
+        aspect-ratio: unset;
+    }
+}
+@media screen and (max-width: 880px) {
+    .full-width-bg .column.half_col .card {
+        width: calc(var(--max-width) / 2);
+        aspect-ratio: unset;
+    }
+}
+@media screen and (max-width: 800px) {
+    .full-width-bg .column.half_col .card {
+        width: calc(var(--max-width) - (var(--gutter)*4));
+        aspect-ratio: unset;
+    }
+}
+
+/*  */
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    min-width: var(--max-width);
+    object-fit: cover;
+}
+
 section.projects-sect {
     background-image: url(../images/ProjectsSectionBG.jpg);
     background-size: cover;
