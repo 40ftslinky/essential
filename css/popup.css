@@ -37,15 +37,21 @@
     background-color: white;
     /* border-radius: 30px; */
     /* padding: 2rem; */
-    max-width: calc(var(--max-col-width) - 2rem);
+    max-width: calc(var(--max-width) * 0.7);
     margin: auto;
     position: relative;
     
 }
 
+@media screen and (max-width: 1200px) {
+    .pop-up_wrapper {
+        max-width: calc(var(--max-width) * 0.9);
+    }
+}
+
 @media screen and (max-width: 480px) {
     .pop-up_wrapper {
-        max-width: calc(var(--max-col-width) - 2rem);
+        max-width: calc(var(--max-width));
     }
 }
 

@@ -97,7 +97,7 @@
 /* BUTTONS */
 
 button.flickity-button.flickity-prev-next-button.previous {
-    left: 0;
+    /* left: 50px; */
 }
 
 .flickity-prev-next-button {

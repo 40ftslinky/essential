@@ -15,7 +15,9 @@
 
     /* sizes */
     --max-width: 1440px;
-    --max-col-width: 90vw;
+    /* --max-col-width: 90vw; */
+    --max-col-width: 1440px;
+    /* --max-col-width: calc(1440px - var(--gap)); */
     --header-height: 100px;
 
     /* animation */
