@@ -255,6 +255,86 @@ input[type=submit],
     }
 }
 
+/* read more */
+
+a.read_more-link,
+button.read_more-link {
+    padding: 0;
+    border: none;
+    background: none;
+    color: var(--color-primary);
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: unset;
+    letter-spacing: unset;
+    cursor: pointer;
+    margin-top: 1rem;
+    text-underline-offset: 3px;
+}
+
+a.read_more-link:hover,
+button.read_more-link:hover {
+    color: var(--color-secondary);
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-color: var(--color-tertiary);
+}
+
+a.read_more-link::after,
+button.read_more-link::after {
+    content: url(../images/icons/arrow-blk.svg);
+    margin-left: 0.5rem;
+    transition: var(--transition-button);
+}
+a.read_more-link:hover::after,
+button.read_more-link:hover::after {
+    transform: translateX(0.5rem);
+    content: url(../images/icons/arrow.svg);
+
+}
+
+/* pagination */
+
+.pagination,
+.pagination a.page {
+    padding: 0.5rem;
+    border: none;
+    background: none;
+    color: var(--color-primary);
+    font-weight: 500;
+    font-size: var(--font-size-sm);
+    text-decoration: none;
+    text-transform: unset;
+    letter-spacing: unset;
+    cursor: pointer;
+    margin-top: 1rem;
+    text-underline-offset: 3px;
+    transition: var(--transition);
+}
+
+.pagination a.page:hover {
+    color: var(--color-secondary);
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-color: var(--color-tertiary);
+}
+
+.pagination a.page::after { }
+.pagination a.page:hover::after { }
+
+.pagination a.page.current {
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: var(--color-tertiary);
+}
+
+.pagination a.page.more, .pagination a.page.more:hover {
+    text-decoration: none;
+    text-transform: unset;
+    letter-spacing: unset;
+}
+
 /*  */
 
 .outside-link {

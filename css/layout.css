@@ -368,7 +368,7 @@ div.caption_wrap {
 @media screen and (max-width: 1200px) {
     .column, .column.one-third, .column.two-third {
         width: 100%;
-        max-width: calc(44.5vw - var(--gap));
+        /* max-width: calc(44.5vw - var(--gap)); */
     }
     .column.one-quarter {
         width: 100%;
@@ -653,8 +653,8 @@ body:not(.home) .hero::before {
 .card-content .card-image {
     margin-bottom: var(--gap);
 }
-.card [class*="button"] {
-    margin-top: var(--gap);
+.card [class*="button"], .card button {
+    margin-top: 1.5rem;
 }
 
 /* ----------------------- */
@@ -670,7 +670,34 @@ body:not(.home) .hero::before {
 
 /* .archive { } */
 
+.tags, .categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-sm);
+    margin-bottom: var(--gap);
+    font-size: var(--font-size-sm);
+}
+.tags .title, .categories  .title,
+.tags a, .categories a { 
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.tags a:hover, .categories a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: var(--color-tertiary);
+}
+.tags a.active, .categories a.active {
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: var(--color-tertiary);
+}
 .grid-archive .column {
+    gap: var(--gap);
+}
+
+.grid-archive .grid-col.column {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -680,7 +707,7 @@ body:not(.home) .hero::before {
 
 
 @media screen and (max-width: 1200px) {
-    .grid-archive .column {
+    .grid-archive .grid-col.column {
         width: 100%;
         max-width: unset;
     }
@@ -763,7 +790,7 @@ body:not(.home) .hero::before {
     justify-content: center;
 }
 
-.grid_banner .column {
+.grid_banner .grid-col.column {
     width: 100%;
     max-width: unset;
     box-sizing: border-box;
@@ -782,7 +809,7 @@ body:not(.home) .hero::before {
     /* margin-bottom: var(--gap-large); */
 }
 
-.grid .column {
+.grid .grid-col.column {
     /* display: grid;
     grid-template-columns: repeat(auto-fill, minmax(var(--one-qtr-max-width), 1fr)); */
     display: flex;
@@ -793,7 +820,7 @@ body:not(.home) .hero::before {
 }
 
 @media screen and (max-width: 1200px) {
-    .grid .column, .column.one-third, .column.two-third {
+    .grid .grid-col.column, .column.one-third, .column.two-third {
         width: 100%;
         max-width: unset;
     }
