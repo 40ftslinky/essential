@@ -285,6 +285,16 @@ strong {
 
 /* other */
 
+._left {
+    text-align: left;
+}
+._right {
+    text-align: right;
+}
+._center {
+    text-align: center;
+}
+
 figcaption, .caption {
     font-size: var(--font-size-caption);
     font-weight: var(--caption-font-weight);
