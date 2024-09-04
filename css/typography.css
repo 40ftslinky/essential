@@ -15,7 +15,8 @@
     --base-font-weight: 300;
     --button-font-weight: 500;
     --link-font-weight: 600;
-    --heading-font-weight: 900;
+    --serif-font-weight: 500;
+    --heading-font-weight: 700;
     --menu-font-weight: 400;
     --footer-font-weight: 400;
     /*  */
@@ -39,7 +40,8 @@
     --font-size-xxxl: clamp(1.5rem, 0.2308rem + 2.3077vw, 3rem);
     --font-size-sxl: clamp(1.5rem, 0.2308rem + 2.3077vw, 3rem);
     /* 3rem; */
-    --font-size-huge: 90px; /* 4.688vw */
+    --font-size-huge: 65px; /* 3.385vw */
+    /* --font-size-huge: 90px;  4.688vw */
     --font-size-huge-sub: 50px;
     --font-size-h2: 32px;
     --font-size-h3: 28.5px;
@@ -187,7 +189,7 @@ a {
 h1, h2, h3 {
     font-family: var(--heading-serif);
     font-weight: 400;
-    /* font-weight: var(--heading-font-weight); */
+    /* font-weight: var(--serif-font-weight); */
     line-height: 1.2;
     margin: 0 0 0.75rem 0;
     /* color: var(--color-primary); */
@@ -210,7 +212,7 @@ h4, h5, h6 {
 
 h1.huge {
     font-size: var(--font-size-huge);
-    line-height: 1;
+    line-height: 0.96;
 }
 h1.subheading, .subheading {
     font-size: var(--font-size-huge-sub);

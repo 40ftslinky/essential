@@ -220,19 +220,6 @@ a.nav-button {
 }
 
 
-/* note: not sure this will work */
-
-.faq__item {
-    /* Store the parent selector in a variable */
-    $parent: &;
-    &.active {
-      #{$parent}-header {
-        /* rules here */
-      }
-    }
-  }
-
-
 .button-solid {
     background-color: var(--color-secondary);
     border: 1px solid var(--color-secondary);
