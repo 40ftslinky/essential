@@ -115,6 +115,7 @@ a.nav-button {
     }
 }
 
+/* ----------------------- */
 /* variation */
 
 .button-secondary,
@@ -255,6 +256,7 @@ input[type=submit],
     }
 }
 
+/* ----------------------- */
 /* read more */
 
 a.read_more-link,
@@ -293,6 +295,7 @@ button.read_more-link:hover::after {
 
 }
 
+/* ----------------------- */
 /* pagination */
 
 .pagination,
@@ -335,6 +338,7 @@ button.read_more-link:hover::after {
     letter-spacing: unset;
 }
 
+/* ----------------------- */
 /*  */
 
 .outside-link {
@@ -346,6 +350,8 @@ button.read_more-link:hover::after {
     margin-left: 0.5rem;
     transition: var(--transition-button);
 }
+
+/* ----------------------- */
 
 .svg-icon {
     /* Place the icon on the text baseline. */
@@ -369,6 +375,7 @@ button.read_more-link:hover::after {
    transition: fill .3s;
 }
 
+/* ----------------------- */
 
 .cky-btn-reject,
 .cky-btn-accept {

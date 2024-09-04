@@ -12,12 +12,15 @@ footer {
     box-sizing: border-box;
 }
 
-footer .row {
+
+/* ----------------------- */
+
+footer .row,
+.post footer .row {
     /* max-width: var(--max-col-width); */
     justify-content: space-between;
     padding: var(--gutter);
-    box-sizing: border-box;
-    
+    box-sizing: border-box; 
 }
 
 footer .row.bottom {

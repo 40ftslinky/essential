@@ -86,8 +86,9 @@
     :root {
         --font-size-xxxl: 22px;
         --intro-size: clamp(1.125rem, 0.9857rem + 0.6369vw, 1.75rem);
-        --base-font-size: 1.5rem;
-        --font-size-base: 1.5rem;
+        --base-font-size: 1.25rem;
+        --font-size-base: 1.25rem;
+        --font-size-sm: 1rem;
     }
 }
 @media screen and (max-width: 1080px){
@@ -297,10 +298,14 @@ strong {
     text-align: center;
 }
 
-figcaption, .caption {
+figcaption, .caption, caption {
     font-size: var(--font-size-caption);
     font-weight: var(--caption-font-weight);
     color: var(--color-grey);
     margin-bottom: 0;
     letter-spacing: var(--letterspacing-caption);
+}
+figcaption {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
 }
