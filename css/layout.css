@@ -675,13 +675,17 @@ body.post .hero::before {
     position: relative;
     /* font-weight: var(--base-font-weight); */
 }
-.services .card-content .card-text {
+.card-content .card-text {
     max-height: 400px;
     overflow-y: auto;
     border-top: 0.5px solid rgba(var(--color-primary-rgb), 0.125);
     position: relative;
 }
-
+@media screen and (max-width: 1200px) {
+    .card-content .card-text {
+        max-height: unset;
+    }
+}
 
 .card-text ul {
     padding-left: 1rem;
