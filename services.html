@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Essential</title>
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <script src="https://kit.fontawesome.com/08e8c4f6cf.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+  
+  </head>
+  
+  <body class="services">
+
+<!--Popup-->
+
+    <div class="pop-up">
+        <div class="form-wrapper">
+            <div class="close">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.364 1.36395L1.63604 14.0919M1.63604 1.36395L14.364 14.0919" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </div>                            
+                        
+            <!-- <h4 class="desc-copy_mlg "></h4> -->
+            <p class="desc-copy _reg">To find out more about our process, contact us, and we’ll get back to you with more details.</p>
+
+            <form>
+                <div class="form_group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form_group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form_group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form_group">
+                    <label for="subject">Company</label>
+                    <input type="text" id="company" name="company" required>
+                </div>
+                <div class="form_group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="form_group">
+                    <label for="consent">
+                        <input type="checkbox" id="consent" name="consent" required>
+                            <span>I consent to Positive Good storing my submitted information so they can respond to my enquiry.</span>
+                    </label>
+                </div>
+                <div class="form_group">
+                    <div class="submit_wrap">
+                        <input class="cta button" type="submit">
+                    </div>
+                </div>
+            </form>
+            
+            
+        </div>
+    </div>
+
+<!-- header -->
+        <header id="header">
+            <!-- logo -->
+            <a class="site-link" href="/">
+                <div class="site-title">
+                <h1 hidden>Essential Community</h1>
+            </div>
+            </a>
+            <a class="site-logo-link" href="/">
+                <div class="logo" aria-label="Essential Community">
+                    <!-- <img src="img/logo.png" alt="logo"> -->
+                    <svg width="250" height="26" viewBox="0 0 250 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.55476 14.8861H15.8447V11.0464H8.55476V14.8861ZM0 0.342486V25.6286H16.8105V21.7889H4.65242V4.18219H16.7124V0.342486H0Z" fill="#322A2A"/>
+                        <path d="M47.4703 7.29351C47.4458 5.8705 47.0389 4.60668 46.2545 3.51169C45.4701 2.41187 44.3867 1.55325 43.0091 0.930983C41.6315 0.30872 40.0333 0 38.2096 0C36.3859 0 34.8024 0.30872 33.3807 0.930983C31.959 1.55325 30.8364 2.42152 30.0127 3.54063C29.1891 4.65974 28.7773 5.96698 28.7773 7.45269C28.7773 9.2616 29.3901 10.7135 30.6157 11.8037C31.8414 12.8939 33.5131 13.7091 35.626 14.2397L38.5479 14.9826C39.4696 15.2141 40.2736 15.4746 40.9648 15.764C41.656 16.0583 42.1904 16.42 42.5777 16.8494C42.9601 17.2835 43.1611 17.8286 43.166 18.4846C43.1562 19.2082 42.9356 19.8401 42.4993 20.3803C42.0629 20.9206 41.4648 21.3403 40.7001 21.6393C39.9353 21.9384 39.0479 22.0879 38.0331 22.0879C37.0183 22.0879 36.1849 21.9432 35.4054 21.6538C34.621 21.3644 33.9886 20.9302 33.5033 20.3466C33.0179 19.7629 32.7434 19.0297 32.6748 18.1518H28.0959C28.1645 19.8304 28.6057 21.2534 29.4343 22.4208C30.2579 23.5881 31.405 24.4805 32.8709 25.0883C34.3367 25.6961 36.0722 26 38.0724 26C40.0726 26 41.8865 25.6865 43.3376 25.0545C44.7887 24.4226 45.9016 23.5495 46.6712 22.4256C47.4409 21.3017 47.8233 19.9993 47.8233 18.5184C47.8233 17.4234 47.6125 16.4683 47.1958 15.6531C46.7791 14.8378 46.2104 14.1432 45.4947 13.5644C44.7789 12.9904 43.97 12.5128 43.0728 12.1317C42.1757 11.7555 41.2393 11.4516 40.2687 11.2297L37.8616 10.6364C37.337 10.5109 36.8124 10.3614 36.2928 10.1781C35.7731 9.99481 35.3025 9.77291 34.876 9.50278C34.4495 9.23265 34.1112 8.90946 33.8661 8.52356C33.6209 8.13766 33.4984 7.67941 33.4984 7.15362C33.5082 6.52171 33.6945 5.95733 34.0622 5.46048C34.4298 4.96846 34.9593 4.57774 35.6555 4.28831C36.3516 3.99889 37.1801 3.85417 38.1508 3.85417C39.5333 3.85417 40.6559 4.15325 41.5188 4.75621C42.3865 5.35918 42.8767 6.19852 42.9944 7.27421H47.4752L47.4703 7.29351Z" fill="#322A2A"/>
+                        <path d="M77.9635 7.29351C77.939 5.8705 77.5321 4.60668 76.7477 3.51169C75.9633 2.41187 74.8799 1.55325 73.5023 0.930983C72.1247 0.30872 70.5265 0 68.7028 0C66.8791 0 65.2956 0.30872 63.8739 0.930983C62.4522 1.55325 61.3295 2.42152 60.5059 3.54063C59.6823 4.65974 59.2705 5.96698 59.2705 7.45269C59.2705 9.2616 59.8833 10.7135 61.1089 11.8037C62.3345 12.8939 64.0063 13.7091 66.1192 14.2397L69.0411 14.9826C69.9627 15.2141 70.7667 15.4746 71.458 15.764C72.1492 16.0583 72.6836 16.42 73.0709 16.8494C73.4582 17.2835 73.6543 17.8286 73.6592 18.4846C73.6494 19.2082 73.4288 19.8401 72.9924 20.3803C72.5561 20.9206 71.958 21.3403 71.1933 21.6393C70.4285 21.9384 69.5411 22.0879 68.5263 22.0879C67.5115 22.0879 66.6781 21.9432 65.8986 21.6538C65.1142 21.3644 64.4818 20.9302 63.9965 20.3466C63.5111 19.7629 63.2366 19.0297 63.168 18.1518H58.5891C58.6577 19.8304 59.0989 21.2534 59.9274 22.4208C60.7511 23.5881 61.8982 24.4805 63.3641 25.0883C64.8299 25.6961 66.5653 26 68.5655 26C70.5657 26 72.3796 25.6865 73.8308 25.0545C75.2819 24.4226 76.3947 23.5495 77.1644 22.4256C77.9341 21.3017 78.3165 19.9993 78.3165 18.5184C78.3165 17.4234 78.1057 16.4683 77.689 15.6531C77.2723 14.8378 76.7036 14.1432 75.9878 13.5644C75.2721 12.9904 74.4632 12.5128 73.566 12.1317C72.6689 11.7555 71.7325 11.4516 70.7618 11.2297L68.3547 10.6364C67.8302 10.5109 67.3056 10.3614 66.786 10.1781C66.2663 9.99481 65.7957 9.77291 65.3691 9.50278C64.9426 9.23265 64.6044 8.90946 64.3592 8.52356C64.1141 8.13766 63.9916 7.67941 63.9916 7.15362C64.0014 6.52171 64.1877 5.95733 64.5553 5.46048C64.923 4.96846 65.4525 4.57774 66.1486 4.28831C66.8448 3.99889 67.6733 3.85417 68.644 3.85417C70.0265 3.85417 71.1491 4.15325 72.012 4.75621C72.8797 5.35918 73.3699 6.19852 73.4876 7.27421H77.9684L77.9635 7.29351Z" fill="#322A2A"/>
+                        <path d="M90.0088 0.342486V25.6237H106.824V21.784H94.6661V14.8861H105.858V11.0464H94.6661V4.18219H106.721V0.342486H90.0088Z" fill="#322A2A"/>
+                        <path d="M135.523 0.342486V17.5777H135.298L123.198 0.342486H119.036V25.6237H123.689V8.40297H123.904L136.013 25.6237H140.151V0.342486H135.523Z" fill="#322A2A"/>
+                        <path d="M151.637 0.342486V4.18219H159.579V25.6237H164.193V4.18219H172.139V0.342486H151.637Z" fill="#322A2A"/>
+                        <path d="M188.288 0.342486H183.636V25.6286H188.288V0.342486Z" fill="#322A2A"/>
+                        <path d="M208.28 0.342486L199.235 25.6237H204.201L211.055 5.52801H211.251L218.119 25.6237H223.086L214.026 0.342486H208.28Z" fill="#322A2A"/>
+                        <path d="M234.028 0.342486V25.6237H250V21.784H238.685V0.342486H234.028Z" fill="#322A2A"/>
+                    </svg>                                                
+                </div>
+            </a>
+
+            <div class="desktop-menu">                
+                <nav class="desktop">
+                    <ul class="menu">
+                        <!-- <li class="menu-item"><a class="menu-link active" href="/">Home</a></li> -->
+                        <li class="menu-item has-dropdown">
+                            <a class="menu-link has-submenu active">Services</a>
+                            <div class="dropdown">
+                                <ul class="submenu">
+                                    <li class="submenu-item"><a class="submenu-link" href="/services_01">Service 01</a></li>
+                                    <li class="submenu-item"><a class="submenu-link" href="/services_02">Service 02</a></li>
+                                    <li class="submenu-item"><a class="submenu-link" href="/services_03">Service 03</a></li>
+                                    <li class="submenu-item"><a class="submenu-link" href="/services_04">Service 04</a></li>
+                                    <li class="submenu-item"><a class="submenu-link" href="/services_05">Service 05</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-item"><a class="menu-link " href="/who">Who we Help</a></li>
+                        <li class="menu-item"><a class="menu-link " href="/projects">Projects</a></li>
+                        <li class="menu-item"><a class="menu-link " href="/about">About Us</a></li>
+                        <li class="menu-item"><a class="menu-link " href="/blog">Blog</a></li>                        
+                    </ul>
+                </nav>
+                <a class="button-solid" href="/contact">Contact Us</a>
+            </div>
+
+            <!-- hamburger -->
+            <div id="menu-button" class="hamburger">
+                <span></span>                
+            </div>
+            <!-- full screen menu -->
+            <div class="fullscreen-menu">                
+                <nav class="fullscreen">
+                    <ul class="menu">
+                        <!-- <li class="menu-item"><a class="menu-link active" href="/">Home</a></li> -->
+                        <li class="menu-item has-dropdown">
+                            <span class="menu-link has-submenu active">Services</span>
+                                <ul class="submenu">
+                                    <li class="submenu-item"><a class="submenu-link" href="/services_01">Service 01</a></li>
+                                    <li class="submenu-item"><a class="submenu-link" href="/services_02">Service 02</a></li>
+                                    <li class="submenu-item"><a class="submenu-link" href="/services_03">Service 03</a></li>
+                                    <li class="submenu-item"><a class="submenu-link" href="/services_04">Service 04</a></li>
+                                    <li class="submenu-item"><a class="submenu-link" href="/services_05">Service 05</a></li>
+                                </ul>
+                        </li>
+                        <li class="menu-item"><a class="menu-link " href="/who">Who we Help</a></li>
+                        <li class="menu-item"><a class="menu-link " href="/projects">Projects</a></li>
+                        <li class="menu-item"><a class="menu-link " href="/about">About Us</a></li>
+                        <li class="menu-item"><a class="menu-link " href="/blog">Blog</a></li>                        
+                    </ul>
+                </nav>
+                <a class="button-solid" href="/contact">Contact Us</a>
+            </div>
+        </header>
+
+        <main>
+<!--  -->
+            <section class="hero captioned">
+                <div class="hero-image">
+                    <img src="images/heros/services_hero.jpg" alt="image">
+                </div>
+                <div class="hero-caption caption_wrap">
+                    <p class="caption">image Caption | image Caption</p>
+                </div>
+                
+            
+                <div class="row justify-center">
+                    <div class="column align-start _left">
+                        <h1 class="huge">Services
+                            <!-- <span class="subheading">Subheading</span> -->
+                        </h1>
+                    </div>
+                </div>
+            </section>
+<!--  -->
+
+<!--  -->
+            <!-- 01 -->
+            <section class="pattern twin-block ">
+                <div class="row column-reverse-mob">
+                    
+                    <div class="col column half_col card_col">
+                        
+                        <div class="card no_border">
+                            <div class="card-content">
+                                <h3>Everything just works</h3>
+                                <h4>Subheading</h4>
+                                <hr class="redbar"></hr>
+                                <div class="card-text">
+                                    <p>Our experienced OC management team works behind the scenes to ensure your building is running smoothly by guaranteeing your building is OC compliant, ensuring that buildings are run according to the OC rules and regulations.</p>
+                                    <p>We monitor the financial management, and attend your owners corporation meetings. With over 40 years in the business, we provide expert insight and support.</p>
+                                </div>
+                                <!-- <a class="button-secondary">Secondary </a> -->
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col column half_col">
+                        <div class="img_wrap captioned">
+                            <img src="images/modern-lobby-design.jpg" alt="image">
+                            <div class="caption_wrap"><p class="caption">image Caption | image Caption</p></div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+<!--  -->
+            <!-- 02 -->
+            <section class="pattern twin-block">
+                <div class="row">                                        
+
+                    <div class="col column half_col">
+                        <div class="img_wrap captioned">
+                            <img src="images/modern-lobby-design.jpg" alt="image">
+                            <div class="caption_wrap"><p class="caption">image Caption | image Caption</p></div>
+                        </div>
+                    </div>
+
+                    <div class="col column half_col card_col">
+                        
+                        <div class="card no_border">
+                            <div class="card-content">
+                                <h3>OC Compliance</h3>
+                                <!-- <h4>Subheading</h4> -->
+                                <hr class="redbar"></hr>
+                                <div class="card-text">
+                                    <ul>
+                                        <li>We are totally transparent in all our dealings.</li>
+                                        <li>We do not have any secondary companies, that are paidfrom Owners Corporation funds. Each company we deal with is an independent third party to ensure no corruption.</li>
+                                        <li>Assisting the Committee in all matters pursuant to the Common Areas;</li>
+                                        <li>Attending to the day to day operation of the building on behalf of the OC;</li>
+                                        <li>Personally inspecting the Common Areas to ensure all works and repairs have been carried out as per the Quote/Contract;</li>
+                                        <li>We also provide professional advice to the Committee after preparing specifications and calling RFP’s (Request for Proposal) from the Licensed Contractors to provide all services including but not limited to Cleaning, Security, BMS (Building Management Services) and Landscaping etc.</li>
+                                        <li class>Immediately reporting emergency matters (dangers/repairs) to the Committee;</li>
+                                        <li>Recommending to Committee strategies, programs and processes and implemented them;</li>
+                                        <li>Upholding Neighbourly Community Standards by administering Breach of OC Rules Notices to Occupier (as required);</li>
+                                        <li>Obtaining and renewing Licences and attending to Government Registration process on behalf of the OC;</li>
+                                        <li>When there is an issue, we communicate with owners, agents, and tenants simultaneously so that all parties are aware of any breaches or issues.</li>
+                                        <li>Proactively calling & attending meetings with contractors as required to resolve as many issues as we can on behalf of the Committee (saving the Committee time)</li>
+                                        <li>Actively working on all legal matters through consultation with the committee and obtaining legal opinion and following instructions from the committee by starting legal action as required.</li>
+                                    </ul>
+                                </div>
+                                <!-- <a class="button-secondary">Secondary </a> -->
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+<!--  -->            
+<!--  -->
+            <!-- 03 -->
+            <section class="pattern twin-block ">
+                <div class="row column-reverse-mob">
+                    
+                    <div class="col column half_col card_col">
+                        
+                        <div class="card no_border">
+                            <div class="card-content">
+                                <h3>Financial Management</h3>
+                                <!-- <h4>Subheading</h4> -->
+                                <hr class="redbar"></hr>
+                                <div class="card-text">
+                                    <ul>
+                                        <li>Our qualified internal accountants are available to work with financial sub committees</li>
+                                        <li>Our current average arrears over all our properties is 1.5% (industry standard 10-15%)</li>
+                                        <li>Financial Reporting including budgeting, specialist reporting, staged budgeting, legislative requirements, transactional reporting</li>
+                                        <li>We have a dedicated debt recovery management department which personalises by calling owners first when they are five days over the payment due date, then following up with serving the statutory notices to initiate legal proceeding for debt recovery</li>
+                                            
+                                    </ul>
+                                </div>
+                                <!-- <a class="button-secondary">Secondary </a> -->
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col column half_col">
+                        <div class="img_wrap captioned">
+                            <img src="images/modern-lobby-design.jpg" alt="image">
+                            <div class="caption_wrap"><p class="caption">image Caption | image Caption</p></div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+<!--  -->
+            <!-- 04 -->
+            <section class="pattern twin-block">
+                <div class="row">                                        
+
+                    <div class="col column half_col">
+                        <div class="img_wrap captioned">
+                            <img src="images/modern-lobby-design.jpg" alt="image">
+                            <div class="caption_wrap"><p class="caption">image Caption | image Caption</p></div>
+                        </div>
+                    </div>
+
+                    <div class="col column half_col card_col">
+                        
+                        <div class="card no_border">
+                            <div class="card-content">
+                                <h3>Secretarial Management</h3>
+                                <!-- <h4>Subheading</h4> -->
+                                <hr class="redbar"></hr>
+                                <div class="card-text">
+                                    <ul>
+                                        <li>Compliance with all communications in and out of the Owners Corporation</li>
+                                        <li>The day-to-day management of the Owners Corporation Records, including the updating Strata Roll (the register of all owners’ personal details)</li>
+                                        <li>Maintaining custody of all documentation and records relating to the OC;</li>
+                                        <li>Maintaining a Register of all matters relating to the OC pursuant to the Law and Regulations</li>
+                                        <li>Working alongside the committee to ensure that the building’s annual Essential Service Maintenance Audit Report is completed</li>
+                                        <li>Maintaining custody of the Common Seal as directed by the OC;</li>
+                                        <li>Maintaining a register of all Contractors and Contract expiry dates</li>
+                                        <li>Implementing the lawful decisions of the General Meeting;</li>
+                                        <li>Organisation of AGM and distribution of Minutes, after approved by Chairman.</li>
+                                        <li>Representing the OC in all matters as required;</li>
+                                        <li>Calling, attending, and sending out minutes of Committee Meetings to all Owners;</li>
+                                        <li>Providing Owners Corporation Reports to the Committee prior to any committee meeting;</li>
+                                        <li>Ensuring all Common Area matters relating to the community are dealt with efficiently and communicated consistently by updating the relevant parties on any given matter;</li>
+                                    </ul>
+                                </div>
+                                <!-- <a class="button-secondary">Secondary </a> -->
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+<!--  -->    
+<!--  -->
+            <!-- 05 -->
+            <section class="pattern twin-block ">
+                <div class="row column-reverse-mob">
+                    
+                    <div class="col column half_col card_col">
+                        
+                        <div class="card no_border">
+                            <div class="card-content">
+                                <h3>Insurance Management</h3>
+                                <!-- <h4>Subheading</h4> -->
+                                <hr class="redbar"></hr>
+                                <div class="card-text">
+                                    <ul>
+                                        <li>We work with committees and insurance brokers in advance of insurance policy expiration to ensure coverage</li>
+                                        <li>We pride ourselves on working with the insurance ensuring that the OC retains coverage while addressing defects/matters that would otherwise compromise coverage.</li>
+                                        <li>Arranging and recommending all necessary Insurance Policies of the OC to cover the following items:</li>
+                                        <li>
+                                            <ul>
+                                                <li>Full reinstatement of all Common Property i.e. entire building, demolition costs, removal of debris, Architect, Consultant Fees and permit costs;</li>
+                                                <li>Director Liability to cover the Committee Members</li>
+                                                <li>Plant and machinery</li>
+                                                <li>Public Liability</li>
+                                            </ul>
+                                        </li>
+                                        <li>Prepare, lodge, and manage claims on behalf of the OC;</li>
+                                        <li>Liaise with Adjusters and Assessors as required;</li>
+                                        <li>Arranging Independent Valuation on the full reinstatement value of all Common Property and assets every five years or earlier if requested;</li>
+                                    </ul>
+
+                                </div>
+                                <!-- <a class="button-secondary">Secondary </a> -->
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col column half_col">
+                        <div class="img_wrap captioned">
+                            <img src="images/modern-lobby-design.jpg" alt="image">
+                            <div class="caption_wrap"><p class="caption">image Caption | image Caption</p></div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+<!--  --> 
+<!--  -->
+        </main>
+
+        <footer>
+            <div class="row">
+                <div class="col_group">
+                    
+                    
+                    <div class="column">
+                        <div class="logo_wrap">
+                            
+                            <a class="site-logo-link" href="/">
+                                <div class="logo" aria-label="Essential Community">
+                                    <!-- <img src="img/logo.png" alt="logo"> -->
+                                    <img src="./images/brand/essential.svg" alt="Essential Community">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="address">
+
+                            <p>Level 2 / 58 Lorimer Street<br>
+                                Docklands Victoria 3008<br>
+                                Australia</p>
+                                <p class="email"><a href="mailto:info@essentialcommunity.com.au">info@essentialcommunity.com.au</a></p>
+                                <p class="phone"><a href="tel:03 9981 0077">03 9981 0077</a></p>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <nav class="footer_nav">
+                            <ul class="menu">
+                                <li class="menu-item"><a class="menu-link" href="/services">Service</a></li>
+                                <li class="menu-item"><a class="menu-link" href="/who">Who we Help</a></li>
+                                <li class="menu-item"><a class="menu-link" href="/projects">Projects</a></li>
+                                <li class="menu-item"><a class="menu-link" href="/about">About Us</a></li>
+                                <li class="menu-item"><a class="menu-link" href="/blog">Blog</a></li>
+                                <li class="menu-item"><a class="menu-link" href="/contact">Contact Us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+
+                <div class="column align-center">
+                    
+                    <div class="social_head">
+                        <h6>Stay Connected</h6>
+                    </div>
+
+                    <div class="social_wrap">
+                        <a href="https://www.facebook.com/essentialcommunity" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <img src="images/social/facebook.svg" alt="facebook social-icon">
+                        </a>
+                        <a href="https://www.instagram.com/essentialcommunity" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <img src="images/social/instagram.svg" alt="instagram social-icon">
+                        </a>
+                        <!-- <a href="https://www.linkedin.com/company/essentialcommunity" target="_blank" rel="noopener noreferrer" class="social-icon">
+                            <img src="images/social/linkedin.svg" alt="linkedin">
+                        </a> -->
+                        <a href="https://www.x.com/essentialcommunity" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <img src="images/social/x-twitter.svg" alt="x social-icon">
+                        </a>                
+                    </div>
+
+                    <div class="col-image">
+                        <img src="images/brand/100Years.svg" alt="image">
+                    </div>
+
+                </div>
+            </div>
+            <div class="row bottom">
+                <div class="column credits">
+                    <p>© 2021 Essential Community. All rights reserved.</p><a href="/conditions">Terms of Use</a><a href="/privacy">Privacy Policy</a><a href="/about">About Us</a><a href="/contact">Contact</a><a href="/language">English</a>
+                </div>
+            </div>
+        </footer>
+
+    <!-- <script src="js/scripts.js"></script> -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/phucbm/flickity-responsive@2.0.6/flickity-responsive.min.js"></script> -->
+
+    <script src="js/menu-active.js"></script>
+    <script src="js/video-pause.js"></script>
+    <script src="js/pop-up.js"></script>
+    <!-- <script src="js/vimeo-play.js"></script> -->
+    <script src="js/flickity_custom.js"></script>
+
+    
+</body>
+</html>
