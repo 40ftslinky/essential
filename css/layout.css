@@ -747,6 +747,7 @@ body.post .hero::before {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
+    align-items: flex-start;
     gap: var(--gap);
 }
 
@@ -816,6 +817,21 @@ body.post .hero::before {
         max-width: calc(90vw - (0.0rem));
         min-height: calc(90vw - (0.0rem));
     }
+}
+
+.grid-archive h3 {
+    overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+
+.grid-archive p {
+    overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
 
 /* ----------------------- ----------------------- ----------------------- */
