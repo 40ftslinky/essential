@@ -513,6 +513,14 @@ div.caption_wrap {
     padding: 0;
 }
 
+@media screen and (max-width: 1080px) {
+    .hero {
+        min-height: unset;
+        max-height: unset;
+    }
+    
+}
+
 .post .hero {
     display: flex;
     justify-content: center;
@@ -550,6 +558,13 @@ body:not(.home) .hero {
     min-width: 100vw;
     min-height: 470px;
     object-fit: cover;
+}
+
+@media screen and (max-width: 1080px) {
+    .hero img {
+        min-height: unset;
+        height: 100%;
+    }
 }
 
 /* horiz grad for text */

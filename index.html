@@ -108,7 +108,18 @@
 <!--  -->
             <section class="hero captioned">
                 <div class="hero-image">
-                    <img src="images/heros/Essential_Hero.jpg" alt="image">
+                    <!-- <img                         
+                        srcset="images/heros/Essential_Hero_mobile.jpg 950w, images/heros/Essential_Hero.jpg 1920w"
+                        sizes="(max-width: 880px) 950px,
+                                1920px"
+                        src="images/heros/Essential_Hero.jpg"
+                        alt="image"
+                    /> -->
+                    <picture>
+                        <source media="(max-width: 799px)" srcset="images/heros/Essential_Hero_mobile.jpg" />
+                        <source media="(min-width: 800px)" srcset="images/heros/Essential_Hero.jpg" />
+                        <img src="images/heros/Essential_Hero_mobile.jpg" alt="image" />
+                    </picture>
                 </div>
                 <div class="hero-caption caption_wrap">
                     <p class="caption">image Caption | image Caption</p>
