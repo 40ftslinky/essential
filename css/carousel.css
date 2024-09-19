@@ -136,6 +136,11 @@
     }
 }
 
+/* twin */
+
+.twin-block .carousel-cell .row{
+    width: calc(var(--max-width));
+}
 
 /* ----------------------- */
 /* BUTTONS */
