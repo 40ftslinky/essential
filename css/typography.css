@@ -323,6 +323,9 @@ ul, ol {
     margin-inline-start: 1rem;
     margin-left: 1rem;
 }
+main li {
+    margin-bottom: 0.5rem;
+}
 .no_bullets {
     list-style-type: none;
 }

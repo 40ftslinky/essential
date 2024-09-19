@@ -131,6 +131,18 @@ footer img {
     display: block;
 }
 
+footer .col_group {
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 600px){
+    footer .col_group {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}
+
 footer .col-image {
     width:100px
 }
+

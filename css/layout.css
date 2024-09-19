@@ -602,6 +602,11 @@ body.post .hero::before {
 .hero .row {
     position: absolute;
     z-index: 1111;
+    justify-content: center;
+}
+
+.hero .column {
+    align-items: flex-start;
 }
 
 @media screen and (max-width: 1540px) {
@@ -1122,10 +1127,15 @@ blockquote {
 }
 
 .generic .content {
-    --max-width: 880px;
-    background-color: white;
+    /* --max-width: 880px; */
+    background-color: rgba(var(--color-primary-rgb), 0.035);
+    padding: 0;
+    align-items: center;
 }
-.generic .row {
+.generic .content .row {
+    max-width: 880px;
+    background-color: white;
+    padding: var(--gutter);
     justify-content: center;
 }
 .generic .content .column {
