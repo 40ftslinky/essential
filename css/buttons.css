@@ -119,6 +119,7 @@ a.nav-button {
 /* variation */
 
 .button-secondary,
+.fullscreen-menu .button-solid,
 /* .button-carousel, */
 :not(svg)[class*="-icon"],
 .nav-button {
@@ -127,7 +128,7 @@ a.nav-button {
     color: var(--color-secondary);
     &:hover {
         background-color: var(--color-secondary);
-        border: 1px solid var(--color-secondary);
+        border: 1px solid var(--color-white);
         color: var(--color-white);
     }
 }
@@ -313,6 +314,20 @@ button.read_more-link:hover::after {
     margin-top: 1rem;
     text-underline-offset: 3px;
     transition: var(--transition);
+}
+.pagination a {min-width: fit-content;}
+
+.post .pagination a {
+    width: 100%;
+}
+.post .pagination a:first-of-type {
+    text-align: left;
+}
+.post .pagination a:nth-of-type(2) {
+    text-align: center;
+}
+.post .pagination a:last-of-type {
+    text-align: right;
 }
 
 .pagination a.page:hover {

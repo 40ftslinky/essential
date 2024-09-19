@@ -32,6 +32,18 @@ var flkty = new Flickity( elem, {
     // groupCells: 3,
 });
 
+
+var elem = document.querySelector('.partners .carousel');
+var flkty = new Flickity( elem, {
+    // options
+    cellAlign: 'left',
+    contain: true,
+    prevNextButtons: true,
+    pageDots: true,
+    // margin: 10,
+    groupCells: 3,
+});
+
 // 
 
 // external js: flickity.pkgd.js

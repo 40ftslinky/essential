@@ -16,6 +16,39 @@
     }
 }
 
+.partners .flickity-viewport { }
+.partners .carousel-cell {
+    /* height: 150px; */
+    max-height: 150px;
+    width: 150px;
+    width: calc(var(--max-col-width) / 5);
+    margin-right: 4rem;
+}
+.partners .carousel-cell img {
+    transform: scale(1);
+    transition: var(--transition-button);
+    /* filter: grayscale(100%); */
+    filter:  saturate(0);
+}
+.partners .carousel-cell:hover img {
+    transform: scale(1.1);
+    /* filter: grayscale(0); */
+    filter:  saturate(1);
+
+}
+.partner_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.partner_wrap img, .partner-image {
+    min-width: 150px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
 
 
 /* ----------------------- */
@@ -118,6 +151,12 @@
     font-size: 1.5rem;
     transition: var(--transition-button);
     padding: 0;
+}
+
+.partners .flickity-prev-next-button {
+    background-color: white;
+    color: var(--secondary);
+    
 }
 
 .flickity-prev-next-button .flickity-button-icon {

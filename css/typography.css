@@ -196,6 +196,10 @@ h1, h2, h3 {
     /* color: var(--color-primary); */
 }
 
+.content h1 {
+    margin-bottom: 2rem;
+}
+
 h4, h5, h6 {
     font-family: var(--heading-font-family);
     font-weight: 600;
@@ -309,3 +313,18 @@ figcaption {
     margin-top: 0.5rem;
     margin-bottom: 1rem;
 }
+
+
+/* lists */
+
+ul, ol {
+    padding-inline-start:0; 
+    padding-left: 0;
+    margin-inline-start: 1rem;
+    margin-left: 1rem;
+}
+.no_bullets {
+    list-style-type: none;
+}
+
+/*  */

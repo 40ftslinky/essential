@@ -16,7 +16,8 @@ footer {
 /* ----------------------- */
 
 footer .row,
-.post footer .row {
+.post footer .row,
+.generic footer .row {
     /* max-width: var(--max-col-width); */
     justify-content: space-between;
     padding: var(--gutter);
@@ -96,6 +97,11 @@ footer .address a {
     letter-spacing: var(--letterspacing-footer);
     text-transform: uppercase;
     text-decoration: none;
+}
+
+footer img {
+    width: 100%;
+    height: auto;
 }
 
 /*  */
