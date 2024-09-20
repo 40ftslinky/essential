@@ -725,7 +725,7 @@ body.post .hero::before {
     border-top: 0.5px solid rgba(var(--color-primary-rgb), 0.125);
     position: relative;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 880px) {
     .card-content .card-text {
         max-height: unset;
     }
