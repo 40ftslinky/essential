@@ -259,6 +259,7 @@ nav.desktop ul li a span:hover,
     display: flex;
     flex-direction: column;
     list-style: none;
+    margin: 0;
 }
 
 .dropdown ul.submenu li {

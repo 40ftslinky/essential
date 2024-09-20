@@ -111,6 +111,14 @@
     }
 }
 
+.full-width-bg,
+.full-width-bg .carousel,
+.full-width-bg .carousel-cell,
+.full-width-bg .carousel-cell .hero-image,
+.full-width-bg .carousel-cell .hero-image img,
+.full-width-bg .carousel-cell img {
+    height: 50vh;
+}
 @media screen and (max-width: 1080px) {    
     .full-width-bg,
     .full-width-bg .carousel,
