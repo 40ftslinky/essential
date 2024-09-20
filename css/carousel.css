@@ -117,7 +117,7 @@
 .full-width-bg .carousel-cell .hero-image,
 .full-width-bg .carousel-cell .hero-image img,
 .full-width-bg .carousel-cell img {
-    height: 50vh;
+    height: 55vh;
 }
 @media screen and (max-width: 1080px) {    
     .full-width-bg,

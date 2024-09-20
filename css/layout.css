@@ -133,7 +133,13 @@ section.plain, .plain {
 }
 
 .full-width-bg .cell_wrap { position: relative; }
-.cell_wrap .row { position: absolute; top:50%; left: var(--gutter); transform: translateY(-50%);}
+.cell_wrap .row { 
+    position: absolute; 
+    top:50%; 
+    left: var(--gutter); 
+    transform: translateY(-50%);
+    z-index: 2222;
+}
 
 .full-width-bg .column.half_col { width: calc(50% -(var(--gutter)* 2));}
 .full-width-bg .column.half_col .card {
@@ -611,7 +617,8 @@ body.post .hero::before {
 .home .hero.large-hero {
     height: 656px;
 }
-.hero.captioned::after {
+.hero.captioned::after,
+.cell_wrap.captioned::before {
     position: absolute;
     z-index: 2;
     bottom: 0;
