@@ -391,6 +391,10 @@ figure { margin: 0; }
     align-items: flex-end;
 } 
 
+.one-quarter img {
+    max-width: 200px;
+}
+
 @media screen and (max-width: 1200px) {
     .column, .column.one-third, .column.two-third {
         width: 100%;
@@ -706,8 +710,43 @@ body.post .hero::before {
     }
 }
 
+.card h3 {
+    /* max-width: unset; */
+    overflow: hidden;
+    display: -webkit-box;
+    line-clamp: 1;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
 .card p {
+    overflow: hidden;
+    display: -webkit-box;
     max-width: unset;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.full-width-bg .card-content {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+.full-width-bg .card-content h3,
+.full-width-bg .card-content p {
+    -webkit-line-clamp: unset;
+    line-clamp: unset;
+    overflow: unset;
+    display: block;
+    -webkit-box-orient: unset;
+}
+.full-width-bg .card-content::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2rem;
+    width: 100%;
+    background: #fff;
 }
 .card p:last-of-type {
     margin-bottom: 0;
@@ -743,7 +782,8 @@ body.post .hero::before {
     /* font-weight: var(--base-font-weight); */
 }
 .card-content .card-text {
-    max-height: 400px;
+    /* max-height: 400px; */
+    max-height: 23vw;
     overflow-y: auto;
     border-top: 0.5px solid rgba(var(--color-primary-rgb), 0.125);
     position: relative;
@@ -898,8 +938,8 @@ body.post .hero::before {
 .grid-archive h3 {
     overflow: hidden;
   display: -webkit-box;
-  line-clamp: 2;
-  -webkit-line-clamp: 2;
+  line-clamp: 1;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
 }
 
@@ -907,8 +947,8 @@ body.post .hero::before {
 .grid-archive p {
     overflow: hidden;
   display: -webkit-box;
-  line-clamp: 4;
-  -webkit-line-clamp: 4;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
 
@@ -1032,7 +1072,8 @@ body.post .hero::before {
     /* font-weight: var(--base-font-weight); */
     display: flex;
     flex-direction: row;
-    max-height: 40vh;
+    height: 50vh;
+    min-height: 400px;
     overflow: hidden;
 }
 @media screen and (max-width: 1080px){

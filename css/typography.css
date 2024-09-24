@@ -218,6 +218,7 @@ h4, h5, h6 {
 h1.huge {
     font-size: var(--font-size-huge);
     line-height: 0.96;
+    max-width: 18ch;
 }
 h1.subheading, .subheading {
     font-size: var(--font-size-huge-sub);
