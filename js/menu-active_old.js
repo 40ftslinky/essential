@@ -1,4 +1,4 @@
-// menu-active.js
+// menu-active_OLD.js
 
 // $("body").removeClass("no_scroll");
 
@@ -6,7 +6,7 @@
 document.getElementById('menu-button').onclick = function() { 
     this.classList.toggle('active');
     document.getElementsByTagName('header')[0].classList.toggle('active');
-    document.getElementsByClassName('[class*="submenu"]')[0].classList.remove('open');
+    // document.getElementsByClassName('[class*="submenu"]')[0].classList.remove('open');
     document.getElementsByClassName('wp-block-navigation-submenu')[0].classList.remove('open');
     document.body.classList.toggle('no_scroll'); // Add 'no_scroll' class to body
 }
@@ -37,7 +37,7 @@ for (var i = 0; i < hasSubmenuElements.length; i++) {
     // Add the onclick event listener to each element
     hasSubmenuElements[i].onclick = function() {
         // Get all elements with class 'submenu'
-        var submenuElements = document.getElementsByClassName('[class*="submenu"]');
+        // var submenuElements = document.getElementsByClassName('[class*="submenu"]');
         var submenuElements = document.getElementsByClassName('wp-block-navigation-submenu');
 
         // Loop over the elements

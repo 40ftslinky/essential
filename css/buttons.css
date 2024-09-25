@@ -114,6 +114,11 @@ a.nav-button {
         }
     }
 }
+.fullscreen .has-dropdown {
+    &:after {
+        content: url(../images/icons/arrow-down-wht.svg);
+    }
+}
 
 /* ----------------------- */
 /* variation */

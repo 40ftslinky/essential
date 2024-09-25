@@ -765,6 +765,10 @@ body.post .hero::before {
 .articles .card-image {
     max-height: 40vh;
 }
+.projects-sect .card-image img {
+	height: 300px;
+    max-height: 25vh;
+}
 .card-image img {
     width: 100%;
     height: 100%;
