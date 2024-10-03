@@ -312,7 +312,7 @@ nav.desktop ul li a span:hover,
 
 nav .wp-block-navigation-submenu ul li a span,
 .desktop .submenu-link {
-    font-family: var(--submenu-font-family);
+    font-family: var(--menu-font-family);
     font-size: var(--font-size-submenu);
     font-weight: var(--font-weight-submenu);
     letter-spacing: var(--letterspacing-menu);
@@ -343,7 +343,11 @@ nav .wp-block-navigation-submenu ul li a span,
         justify-content: space-between;
         align-items: center;
         margin-bottom: 20px;
-        padding: 10px 0;    
+        padding: 10px 0;  
+        overflow: auto;
+        padding-top: calc(var(--header-height)* 2);
+        max-height: 80vh;
+        box-sizing: border-box;  
     }
 
     nav.fullscreen ul,
@@ -396,6 +400,9 @@ nav .wp-block-navigation-submenu ul li a span,
         height: 0;
         transition: var(--transition);
         align-items: flex-start;
+    }
+    .fullscreen .submenu {
+        padding-right: 2rem;
     }
     .wp-block-navigation__submenu-container.open,
     .fullscreen .submenu.open {

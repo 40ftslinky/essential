@@ -117,7 +117,8 @@ a.nav-button {
 .fullscreen .has-dropdown {
     &:after {
         top: 24px;
-        left: 100%;
+        /* left: 100%; */
+        right: 0;
         content: url(../images/icons/arrow-down-wht.svg);
     }
     &:hover {
