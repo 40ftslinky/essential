@@ -187,6 +187,7 @@ nav.desktop li.has-child a,
 nav.desktop ul li a span,
 .desktop .menu-link {
     font-family: var(--menu-font-family);
+    font-size: 12px;
     font-size: var(--font-size-menu);
     font-weight: var(--menu-font-weight);
     letter-spacing: var(--letterspacing-menu);
@@ -394,6 +395,7 @@ nav .wp-block-navigation-submenu ul li a span,
         opacity: 0;
         height: 0;
         transition: var(--transition);
+        align-items: flex-start;
     }
     .wp-block-navigation__submenu-container.open,
     .fullscreen .submenu.open {
@@ -424,9 +426,13 @@ nav .wp-block-navigation-submenu ul li a span,
         font-family: var(--submenu-font-family);
         font-size: var(--font-size-submenu);
         font-weight: var(--font-weight-submenu);
-        color: var(--color-primary);
+        color: var(--white);
         text-decoration: none;
         transition: var(--transition);
+    }
+
+    .fullscreen-menu .button-solid {
+        margin-left: -2rem;
     }
 /* end mobile */
 }
@@ -502,7 +508,7 @@ nav .wp-block-navigation-submenu ul li a span,
         }
         &.active:before {
         width: 34px;
-        top: 25px;
+        top: 24px;
         left: 8px;
         transform: rotate(45deg);
         }
@@ -581,6 +587,7 @@ nav .wp-block-navigation-submenu ul li a span,
     }
 
 /* end mobile */
+
 }
 
 /* ----------------------- */

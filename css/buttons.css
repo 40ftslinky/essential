@@ -99,7 +99,7 @@ a.nav-button {
         position: absolute;
         top: 50%;
         right: 10px;
-        transform: translate(0%, -50%);
+        transform: rotate(0) translate(0%, -50%);
         transform-origin: center center;
         display: inline;
         content: url(../images/icons/arrow-down-blk.svg);
@@ -116,7 +116,14 @@ a.nav-button {
 }
 .fullscreen .has-dropdown {
     &:after {
+        top: 24px;
+        left: 100%;
         content: url(../images/icons/arrow-down-wht.svg);
+    }
+    &:hover {
+        &:after {
+            opacity: 1;
+        }
     }
 }
 

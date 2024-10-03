@@ -302,6 +302,7 @@ figure { margin: 0; }
     gap: var(--gap-large);
     /* !!!! */
     /* overflow-x: hidden; */
+    box-sizing: border-box;
 }
 .type_eg .row {
     flex-wrap: wrap;
